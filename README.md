@@ -1,2 +1,0 @@
-# devs-hackathon
-devs-hackathon
