@@ -3,16 +3,26 @@
 body {
     background-color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 /* styling all horizontal lines */
 hr {
-    width: 100%;
+    width: 100vw;
     height: 3px;
     border-left: 0;
     border-right: 0;
     border-top: 0;
     margin-top: 0;
+}
+
+h3:hover {
+    color: red;
+}
+
+span {
+    color: blue;
 }
 
 /* navbar needed its own div cuz otherwise hr was being centered with width 0 */
@@ -31,7 +41,7 @@ hr {
 }
 
 /* sizing logo respective of aspect-ratio */
-img {
+.main-logo {
     object-fit: contain;
     width: 100%;
     height: 60px;
@@ -46,7 +56,7 @@ img {
     width: 100px;
 }
 
-/* additional styling */
+/* makes anchor tag a pointer */
 a {
     cursor: pointer;
 }
@@ -58,7 +68,7 @@ a {
     justify-content: space-between;
 }
 
-/* pushes the text to the end of the container in the horizontal direction via justify-content */
+/* pushes the text to the end of the container in the horizontal direction (ie. to the right) via justify-content */
 .text-pos {
     display: flex;
     width: 100%;
@@ -88,6 +98,66 @@ a {
     float: right;
     order: 1;
 }
+
+/* positioning main section of text/image */
+.global-image-text {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+}
+
+/* centering buttons/text in its respective container */
+.main-text-position {
+    display: flex;
+    width: 80%;
+    margin-left: 9.9%;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* styling for the text */
+.main-text-position h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.main-text-position p {
+    text-align: center;
+    line-height: 20px;
+    width: 70%;
+}
+
+/* styling for the button */
+.main-button-position {
+    display: inline-flex;
+    justify-content: space-evenly;
+    height: 8px;
+    width: 100%;
+}
+
+.btn {
+    box-sizing: border-box;
+}
+
+.illustration {
+    background-color: red;
+}
+
+.main-image {
+    object-fit: contain;
+    width: 40rem;
+    height: 500px;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 
