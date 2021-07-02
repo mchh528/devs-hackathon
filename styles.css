@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* positioning of logo */
+.logoPosition {
+    object-fit: contain;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin: 20px;
+}
+
+/* adding vertical divider */
+.divider {
+    float: left;
+    margin-right: 5px;
+    width: 1px;
+    height: 30px;
+    background-color: red;
+}
+
+
+
+
