@@ -17,8 +17,14 @@ hr {
     margin-top: 0;
 }
 
-h3:hover {
+a:hover {
     color: red;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 span {
@@ -44,8 +50,8 @@ span {
 .main-logo {
     object-fit: contain;
     width: 100%;
-    height: 60px;
-    margin: 20px;
+    height: 80px;
+    margin: 10px;
 }
 
 /* positioning image */
@@ -168,8 +174,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -20px;
-    margin-bottom: -50px;
 }
 
 .main-info-container {
