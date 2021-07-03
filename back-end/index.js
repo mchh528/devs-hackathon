@@ -39,7 +39,7 @@ mongoose.set('useFindAndModify', false);
 
 import studentRoutes from './routes/student.js';
 import gameRoutes from './routes/gameRoutes.js';
-
+import codeRoute from './routes/codeRoutes.js'
 
 const app = express();
 
@@ -49,8 +49,8 @@ app.use(bodyParser.json({limit: "20mb", extended:true}));
 app.use(bodyParser.urlencoded({limit: "20mb", extended:true}));
 
 app.use(cors());
-app.use('/students', studentRoutes);
-app.use('/problem_info', gameRoutes);
+app.use('/users', gameRoutes);
+app.use('/api/code/submit', codeRoute);
 
 
 const CONNECTION_URL = "mongodb+srv://admin:1234@cluster0.4uxdi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";

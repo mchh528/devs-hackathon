@@ -3,15 +3,16 @@ import mongoose from 'mongoose';
 const userSchema = mongoose.Schema({
     username: String,
     password: String,
-    elo: Number,
-    rank_title: String
+    EXP: Number,
+    level: Number
 })
 
 const problemSchema = mongoose.Schema({
     problem_id: Number,
     difficulty: Number,
     title: String,
-    statement: String
+    statement: String,
+    test_cases: Array
 })
 
 

@@ -1,0 +1,12 @@
+.card {
+  background-color: #2d2d30;
+  padding-left: 10px;
+  width: auto;
+  height: 905px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.text {
+  color: rgb(225, 225, 228);
+}
