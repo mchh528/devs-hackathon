@@ -184,10 +184,6 @@ a {
     width: 280px;
 }
 
-.main-info-container h3 {
-    width: 50px;
-}
-
 .centerText {
     display: flex;
     justify-content: center;
@@ -196,6 +192,17 @@ a {
 
 .imagePosition {
     margin-right: 120px;
+}
+
+.problem-1-image {
+    width: 20%;
+    
+}
+
+.motivation {
+    object-fit: contain;
+    width: 100%;
+    height: 200px;
 }
 
 
