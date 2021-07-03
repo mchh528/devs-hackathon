@@ -1,17 +1,29 @@
-import { Container, AppBar, Typography, Grow, Grid } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import Ide from "./ide";
 import Prompt from "./prompt";
 import classes from "./game.module.css";
 import ReadIde from "./readIde";
+import { useState } from "react";
+import Overlay from "../overlay";
+import Backdrop from "../backdrop";
 
 function Game() {
+  const [overlayOn, setOverlay] = useState(true);
+  function overlayHandler() {
+    setOverlay(false);
+  }
   return (
-    <div>
+    <div className={classes.game}>
+      {overlayOn && (
+        <Overlay onPlay={overlayHandler} onCancel={overlayHandler} />
+      )}
+      {overlayOn && <Backdrop />}
       <Grid
         container
         spacing={1}
         className={classes.backgroundColor}
         direction="row"
+        autoheight
       >
         <Grid container direction="column" xs={4}>
           <Grid item xs>
