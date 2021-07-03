@@ -59,3 +59,11 @@
   border-color: #d4d4d4;
   color: #d4d4d4;
 }
+
+.readIDE {
+  min-height: 40vh;
+  min-width: 50vw;
+  overflow-y: hidden;
+  resize: none;
+  width: 95%;
+}
