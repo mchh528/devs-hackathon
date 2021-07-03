@@ -102,31 +102,39 @@ a {
 /* positioning main section of text/image */
 .global-image-text {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
-    height: 100vh;
+    height: 50vh;   
+    
 }
 
 /* centering buttons/text in its respective container */
 .main-text-position {
     display: flex;
     width: 80%;
-    margin-left: 9.9%;
+    margin-left: 23%;
     height: 400px;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
 }
 
-/* styling for the text */
+/* styling for the main text */
 .main-text-position h1 {
     font-size: 36px;
-    text-align: center;
 }
 
 .main-text-position p {
-    text-align: center;
     line-height: 20px;
-    width: 70%;
+    width: 350px;
+    text-align: center;
+    margin-top: 0;
+    margin-right: 30px;
+}
+
+.imagePosition {
+    margin-right: 10px;
 }
 
 /* styling for the button */
@@ -138,11 +146,15 @@ a {
 }
 
 .btn {
-    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
 }
 
-.illustration {
-    background-color: red;
+.buttonPosition {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-image {
@@ -151,15 +163,65 @@ a {
     height: 500px;
 }
 
+/* centering main-div */
 .center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: -50px;
+}
+
+.main-info-container {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: space-between;
+}
+
+.developers-difficulty, .modern-motivation, .personalised-problem-set {
+    margin-top: 10px;
+    width: 280px;
+}
+
+.main-info-container h3 {
+    width: 50px;
+}
+
+.centerText {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+@media (max-width: 800px) {
+    .main-info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+        justify-content: space-between;
+    }
 
+    .global-image-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 50vh;   
+    }
 
+    .imagePosition {
+        display: flex;
+        order: 2;
+    }
+}
 
+.imagePosition {
+    margin-right: 120px;
+}
 
 
 
