@@ -5,8 +5,8 @@ import classes from "./game.module.css";
 
 function Game() {
   return (
-    <div className={classes.background}>
-      <Grid container spacing={2}>
+    <div>
+      <Grid container spacing={1} className={classes.backgroundColor}>
         <Grid item xs>
           <Prompt
             title="Title"
